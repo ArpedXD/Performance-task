@@ -71,5 +71,5 @@ async function start2(){
     restart.style.opacity = '0';
     await wait();
     await wait();
-    location.href = 'intro/h.html';
+    location.href = 'h.html';
 }
