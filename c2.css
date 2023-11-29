@@ -1,0 +1,72 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-image:none;
+    background-color:black;
+    transition:1s;
+    background-size:cover;
+}
+
+#account{
+    background-color:rgba(255,255,255,0.1);
+    box-shadow:0px 0px 40px rgba(255,255,255,0.5);
+    border-top:1px solid white;
+    border-left:1px solid white;
+    backdrop-filter: blur(3px);
+    height:500px;
+    width:500px;
+    position:absolute;
+    right:20px;
+    border-radius:20px;
+    top:-600px; /*50px originally*/
+    transition:2s;
+}
+
+h1{
+    text-align: center;
+    line-height:60px;
+}
+
+.userinfo{
+    display:flex;
+    flex-direction: column;
+    margin:40px;
+    margin-top:-30px;
+    margin-left:50px;
+    height:40px;
+    width:180px;
+    border-radius:13px;
+    background-color: transparent;
+    border:1px solid black;
+}
+
+#fname{
+    margin-top:20px;
+}
+
+.userinfo::placeholder{
+    color:black;
+}
+
+#sbmt{
+    height:30px;
+    width:70px;
+    padding:5px;
+    padding-left:12px;
+    background-color:white;
+    cursor:pointer;
+}
+
+#sbmt:active{
+    transform:scale(1.1);
+}
+
+.checker{
+    color:white;
+    position:absolute;
+    top:285px;
+    left:125px;
+}
