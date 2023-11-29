@@ -17,7 +17,7 @@ function wait() {
         await wait();
         await wait();
         body.style.backgroundColor = 'transparent';
-        body.style.backgroundImage = "url('bg.jpg')";
+        body.style.backgroundImage = "url('Bg.jpg')";
         await wait();
         await wait();
         account.style.top = '50px';
