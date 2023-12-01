@@ -70,3 +70,109 @@ h1{
     top:285px;
     left:125px;
 }
+
+#main{
+    position:absolute;
+    height:500px;
+    width:1000px;
+    right:1500px; /* for editting 230px and 1500px for functioning */
+    top:50px; /* for editting 50px */
+    background-color:rgba(255,255,255,0.1);
+    border-radius:20px;
+    backdrop-filter: blur(5px);
+    box-shadow:0px 0px 20px rgba(83, 83, 83, 0.5);
+    transition:2s;
+}
+
+#info{
+    height:150px;
+    width:300px;
+    position:absolute;
+    background-color: rgb(155, 155, 155);
+    left:20px;
+    border-radius:10px;
+    padding-top:30px;
+}
+
+#info p{
+    font-size:20px;
+    padding-left:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#vinfo{
+    text-align:center;
+}
+
+#info #SorT{
+    font-size: 15px;
+    color:black;
+    -webkit-text-stroke: 1px yellow;
+    text-align: center;
+}
+
+.experiences{
+    background-color:rgba(241, 241, 241,0.7);
+    height:350px;
+    width:400px;
+    position:absolute;
+    right:50px;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.experiences div{
+    color:white;
+    text-align:center;
+    font-size:20px;
+    height:60px;
+    width: 250px;
+    background-color:Black;
+    margin-left:70px;
+    margin-top:15px;
+    border-radius:20px;
+    padding-top:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    transform: scale(1);
+    transition:1s;
+    box-shadow:0px 0px 20px rgb(156, 156, 156);
+}
+
+.experiences div:hover{
+    transform:scale(1.1);
+}
+
+#experiences2 div{
+    height:450px;
+    background-color:rgba(241, 241, 241,0.9);
+    width:700px;
+    position:absolute;
+    left:250px; /*250px when editting.*/
+    top:-1000px; /*80px when editting. */
+    border-radius: 70px;
+    box-shadow: 0px 0px 300px rgb(82, 82, 82);
+    transition:1s;
+}
+
+#backk{
+    height:20px;
+    width:50px;
+    background-color:white;
+    box-shadow:0px 0px 20px rgb(177, 177, 177);
+    color:black;
+    -webkit-text-stroke: 0px white;
+    cursor:pointer;
+    position:absolute;
+    margin:10px;
+    top:-1000px; /*10px for editting */
+    padding:20px;
+    padding-top:15px;
+    text-align:center;
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    transition:2s;
+}
+
