@@ -13,6 +13,7 @@ let before1 = document.getElementById('before1');
 let during1 = document.getElementById('during1');
 let after1 = document.getElementById('after1');
 let back = document.getElementById('backk');
+let mobile = window.matchMedia("(max-width: 600px)");
 
 function wait() {
     return new Promise((resolve) => {
@@ -27,15 +28,23 @@ function wait2() {
         await wait();
         await wait();
         await wait();
-        body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTq8K4DNL_53oOdFc31INbeasMsX_lyD8h3j-eyaUoRw&s')";
         await wait();
         body.style.backgroundColor = 'transparent';
+        body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTq8K4DNL_53oOdFc31INbeasMsX_lyD8h3j-eyaUoRw&s')";
         await wait();
         await wait();
-        account.style.top = '50px';
+        if(mobile.matches){
+          account.style.top = '40px';
+        } else{
+            account.style.top = '50px';
+        }
         await wait();
         await wait();
-        account.style.right = '600px';
+        if(mobile.matches){
+            account.style.right = '2px';
+        }else{
+            account.style.right = '600px';
+        }
     }
 
 
@@ -93,7 +102,11 @@ async function check(){
         age1.innerHTML = "Age:" + agee;
         SorT.innerHTML = srt;
         await wait();
-        main.style.right = '230px';
+        if(mobile.matches){
+            main.style.right = '0px';
+        }else{
+            main.style.right = '250px';
+        }
     }
 
     if(st.value === 'teacher' || st.value === 'Teacher'){
@@ -121,4 +134,5 @@ function back1(){
     during1.style.top = '-1000px';
     after1.style.top = '-1000px';
     back.style.top = '-1000px';
-        }
+}
+
