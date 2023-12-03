@@ -1,2 +1,4 @@
 # Performance-task
-This is a new project that i made for practice purposes and probabbly pass it to my teacher :DD
+Update1:
+--made it compatible for CellPhones.
+--Fixed A Few Bugs.
